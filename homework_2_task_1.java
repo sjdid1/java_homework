@@ -13,18 +13,24 @@
 // }
 // }
 
+import java.util.Arrays;
 public class homework_2_task_1 {
-   public static String restoreString(String s, int indices) {
-      char result = new char.length();
-      for (int i = 0; i < s.length(); i++) {
-         result[i] = s.charAt(i);
+      public static void main(String[] args) {
+          String s = "cba";
+          int[] index = {3, 2, 1};
+  
+          String shuffled = shuffle(s, index);
+  
+          System.out.println(shuffled);
       }
-      return new String(result);
-   }
-
-   public static void main(String args) {
-      String s = "cba";
-      int [] indices = { 3, 2, 1 };
-      System.out.println(restoreString(s, indices));
-   }
+  
+      public static String shuffle(final String s, final int index) {
+          char shuffled = new chars.length();
+  
+          for (int i = 0; i < s.length(); i++) {
+              shuffledindex[i] = s.charAt(i);
+          }
+  
+          return new String(shuffled);
+      }
 }
